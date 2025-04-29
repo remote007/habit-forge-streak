@@ -1,0 +1,95 @@
+/* Custom theme overrides for jet black borders and text */
+
+/* Global text color updates */
+body {
+  color: hsl(var(--jet-black));
+}
+
+/* Card component borders */
+.card,
+.rounded-lg {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Button borders */
+button,
+.btn,
+.button {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Input borders */
+input,
+select,
+textarea {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Dialog and modal borders */
+.dialog-content,
+.modal-content {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Tab borders */
+.tabs {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(var(--jet-black));
+}
+
+/* Links */
+a {
+  color: hsl(var(--jet-black));
+}
+
+/* Table borders */
+table, th, td {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Custom component classes */
+.habit-card {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+.heatmap-cell {
+  border: 1px solid hsl(var(--jet-black)) !important;
+}
+
+/* Dark mode adjustments */
+.dark body {
+  color: hsl(var(--foreground));
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark a {
+  color: hsl(var(--foreground));
+}
+
+/* Specific UI components */
+.badge {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+.alert {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Form elements */
+.form-control {
+  border-color: hsl(var(--jet-black)) !important;
+}
+
+/* Navigation */
+nav {
+  border-color: hsl(var(--jet-black)) !important;
+}

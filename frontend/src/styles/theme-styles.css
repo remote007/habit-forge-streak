@@ -1,0 +1,513 @@
+/* Theme Styles for Habit Forge */
+
+/* Default Theme (existing styles) */
+.theme-default {
+  /* Use existing styles from index.css */
+  --card-border-glow: none;
+  --card-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode adjustments for all themes */
+.dark {
+  --background: 174 16% 15%;
+  --foreground: 17 38% 94%;
+  --card: 174 16% 20%;
+  --card-foreground: 17 38% 94%;
+  --popover: 174 16% 20%;
+  --popover-foreground: 17 38% 94%;
+  --primary: 173 25% 82%;
+  --primary-foreground: 174 16% 15%;
+  --secondary: 282 40% 80%;
+  --secondary-foreground: 174 16% 15%;
+  --muted: 174 16% 25%;
+  --muted-foreground: 17 38% 70%;
+  --accent: 282 40% 80%;
+  --accent-foreground: 174 16% 15%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 173 25% 82%;
+  --input: 173 25% 82%;
+  --ring: 282 40% 80%;
+}
+
+/* 1. Modern Newspaper Theme */
+.theme-modern-newspaper {
+  --background: 0 0% 96%;
+  --foreground: 0 0% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 13%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 13%;
+  --primary: 0 0% 13%;
+  --primary-foreground: 0 0% 96%;
+  --secondary: 0 0% 90%;
+  --secondary-foreground: 0 0% 13%;
+  --muted: 0 0% 90%;
+  --muted-foreground: 0 0% 40%;
+  --accent: 0 0% 90%;
+  --accent-foreground: 0 0% 13%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 13%;
+  --input: 0 0% 13%;
+  --ring: 0 0% 13%;
+  
+  /* Font families */
+  --font-serif: 'Playfair Display', 'Merriweather', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Custom properties */
+  --card-border-glow: none;
+  --card-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --card-border-width: 1px;
+  --card-border-style: solid;
+  
+  /* Background texture */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.03' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Dark mode for Modern Newspaper */
+.dark.theme-modern-newspaper {
+  --background: 0 0% 10%;
+  --foreground: 0 0% 90%;
+  --card: 0 0% 15%;
+  --card-foreground: 0 0% 90%;
+  --popover: 0 0% 15%;
+  --popover-foreground: 0 0% 90%;
+  --primary: 0 0% 90%;
+  --primary-foreground: 0 0% 10%;
+  --secondary: 0 0% 20%;
+  --secondary-foreground: 0 0% 90%;
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 0 0% 20%;
+  --accent-foreground: 0 0% 90%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 90%;
+  
+  /* Background texture for dark mode */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.03' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.theme-modern-newspaper h1,
+.theme-modern-newspaper h2,
+.theme-modern-newspaper h3,
+.theme-modern-newspaper h4,
+.theme-modern-newspaper h5,
+.theme-modern-newspaper h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.theme-modern-newspaper p,
+.theme-modern-newspaper span,
+.theme-modern-newspaper div {
+  font-family: var(--font-sans);
+}
+
+.theme-modern-newspaper .card {
+  border-width: var(--card-border-width);
+  border-style: var(--card-border-style);
+  border-color: hsl(var(--border));
+  box-shadow: var(--card-box-shadow);
+}
+
+/* 2. Funky Retro Magazine Theme */
+.theme-funky-retro {
+  --background: 36 100% 95%;
+  --foreground: 27 45% 25%;
+  --card: 0 0% 100%;
+  --card-foreground: 27 45% 25%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 27 45% 25%;
+  --primary: 27 45% 25%;
+  --primary-foreground: 36 100% 95%;
+  --secondary: 36 100% 70%;
+  --secondary-foreground: 27 45% 25%;
+  --muted: 36 100% 85%;
+  --muted-foreground: 27 45% 40%;
+  --accent: 120 45% 35%;
+  --accent-foreground: 36 100% 95%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 27 45% 25%;
+  --input: 27 45% 25%;
+  --ring: 36 100% 50%;
+  
+  /* Custom colors */
+  --burnt-orange: 20 100% 40%;
+  --mustard: 48 100% 50%;
+  --avocado: 90 60% 26%;
+  --brown: 25 30% 27%;
+  
+  /* Font families */
+  --font-display: 'Cooper Black', 'Outfit', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  
+  /* Custom properties */
+  --card-border-glow: 0 0 15px rgba(204, 85, 0, 0.3);
+  --card-box-shadow: 4px 4px 0px rgba(90, 61, 43, 0.8);
+  --card-border-width: 2px;
+  --card-border-style: solid;
+  
+  /* Background texture */
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cc5500' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Dark mode for Funky Retro */
+.dark.theme-funky-retro {
+  --background: 27 45% 15%;
+  --foreground: 36 100% 85%;
+  --card: 27 45% 20%;
+  --card-foreground: 36 100% 85%;
+  --popover: 27 45% 20%;
+  --popover-foreground: 36 100% 85%;
+  --primary: 36 100% 70%;
+  --primary-foreground: 27 45% 15%;
+  --secondary: 20 100% 30%;
+  --secondary-foreground: 36 100% 85%;
+  --muted: 27 45% 25%;
+  --muted-foreground: 36 100% 70%;
+  --accent: 90 60% 20%;
+  --accent-foreground: 36 100% 85%;
+  --border: 36 100% 70%;
+  --input: 36 100% 70%;
+  --ring: 20 100% 40%;
+  
+  /* Custom colors for dark mode */
+  --burnt-orange: 20 100% 50%;
+  --mustard: 48 100% 60%;
+  --avocado: 90 60% 40%;
+  --brown: 25 30% 50%;
+  
+  /* Custom properties for dark mode */
+  --card-border-glow: 0 0 15px rgba(255, 166, 0, 0.5);
+  
+  /* Background texture for dark mode */
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffcc00' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.theme-funky-retro h1,
+.theme-funky-retro h2,
+.theme-funky-retro h3,
+.theme-funky-retro h4,
+.theme-funky-retro h5,
+.theme-funky-retro h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: hsl(var(--burnt-orange));
+}
+
+.theme-funky-retro p,
+.theme-funky-retro span,
+.theme-funky-retro div {
+  font-family: var(--font-body);
+}
+
+.theme-funky-retro .card {
+  border-width: var(--card-border-width);
+  border-style: var(--card-border-style);
+  border-color: hsl(var(--brown));
+  box-shadow: var(--card-box-shadow);
+  transform: rotate(-1deg);
+}
+
+/* 3. Indie Zine Theme */
+.theme-indie-zine {
+  --background: 0 0% 10%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 15%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 15%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 10%;
+  --secondary: 324 100% 50%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 114 100% 50%;
+  --accent-foreground: 0 0% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 324 100% 50%;
+  --input: 0 0% 100%;
+  --ring: 324 100% 50%;
+  
+  /* Custom colors */
+  --neon-pink: 324 100% 50%;
+  --neon-green: 114 100% 50%;
+  
+  /* Font families */
+  --font-typewriter: 'Courier New', monospace;
+  --font-handwritten: 'Permanent Marker', cursive;
+  
+  /* Custom properties */
+  --card-border-glow: 0 0 15px rgba(255, 0, 127, 0.7);
+  --card-box-shadow: 5px 5px 0px rgba(57, 255, 20, 0.7);
+  --card-border-width: 2px;
+  --card-border-style: dashed;
+  
+  /* Background texture */
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Dark mode for Indie Zine - already dark by default, but we'll enhance contrast */
+.dark.theme-indie-zine {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 10%;
+  --muted-foreground: 0 0% 80%;
+  --border: 324 100% 60%;
+  
+  /* Custom colors for dark mode */
+  --neon-pink: 324 100% 60%;
+  --neon-green: 114 100% 60%;
+  
+  /* Custom properties for dark mode */
+  --card-border-glow: 0 0 20px rgba(255, 0, 127, 0.9);
+  --card-box-shadow: 5px 5px 0px rgba(57, 255, 20, 0.9);
+}
+
+.theme-indie-zine h1,
+.theme-indie-zine h2,
+.theme-indie-zine h3,
+.theme-indie-zine h4,
+.theme-indie-zine h5,
+.theme-indie-zine h6 {
+  font-family: var(--font-handwritten);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: hsl(var(--neon-pink));
+  transform: rotate(-1deg);
+}
+
+.theme-indie-zine p,
+.theme-indie-zine span,
+.theme-indie-zine div {
+  font-family: var(--font-typewriter);
+}
+
+.theme-indie-zine .card {
+  border-width: var(--card-border-width);
+  border-style: var(--card-border-style);
+  border-color: hsl(var(--neon-pink));
+  box-shadow: var(--card-box-shadow);
+  transform: rotate(1deg);
+}
+
+/* 4. Editorial Funk Theme */
+.theme-editorial-funk {
+  --background: 210 100% 98%;
+  --foreground: 210 100% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 100% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 100% 12%;
+  --primary: 210 100% 12%;
+  --primary-foreground: 210 100% 98%;
+  --secondary: 29 30% 46%;
+  --secondary-foreground: 210 100% 98%;
+  --muted: 210 40% 90%;
+  --muted-foreground: 210 100% 40%;
+  --accent: 340 80% 85%;
+  --accent-foreground: 210 100% 12%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 210 100% 12%;
+  --input: 210 100% 12%;
+  --ring: 29 30% 46%;
+  
+  /* Custom colors */
+  --navy: 210 100% 12%;
+  --copper: 29 30% 46%;
+  --blush: 340 80% 85%;
+  --charcoal: 0 0% 20%;
+  
+  /* Font families */
+  --font-serif: 'Libre Baskerville', serif;
+  --font-sans: 'Sora', sans-serif;
+  
+  /* Custom properties */
+  --card-border-glow: 0 0 20px rgba(184, 115, 51, 0.3);
+  --card-box-shadow: 0 10px 30px rgba(0, 31, 63, 0.1);
+  --card-border-width: 1px;
+  --card-border-style: solid;
+  
+  /* Background with subtle gradient */
+  background: linear-gradient(135deg, hsl(210, 100%, 98%) 0%, hsl(340, 80%, 98%) 100%);
+}
+
+/* Dark mode for Editorial Funk */
+.dark.theme-editorial-funk {
+  --background: 210 100% 10%;
+  --foreground: 210 100% 90%;
+  --card: 210 100% 15%;
+  --card-foreground: 210 100% 90%;
+  --popover: 210 100% 15%;
+  --popover-foreground: 210 100% 90%;
+  --primary: 210 100% 80%;
+  --primary-foreground: 210 100% 10%;
+  --secondary: 29 30% 46%;
+  --secondary-foreground: 210 100% 90%;
+  --muted: 210 40% 20%;
+  --muted-foreground: 210 100% 70%;
+  --accent: 340 80% 50%;
+  --accent-foreground: 210 100% 90%;
+  --border: 210 100% 80%;
+  --input: 210 100% 80%;
+  --ring: 29 30% 46%;
+  
+  /* Custom colors for dark mode */
+  --navy: 210 100% 80%;
+  --copper: 29 30% 60%;
+  --blush: 340 80% 60%;
+  --charcoal: 0 0% 80%;
+  
+  /* Custom properties for dark mode */
+  --card-border-glow: 0 0 20px rgba(184, 115, 51, 0.5);
+  
+  /* Background with subtle gradient for dark mode */
+  background: linear-gradient(135deg, hsl(210, 100%, 10%) 0%, hsl(340, 30%, 15%) 100%);
+}
+
+.theme-editorial-funk h1,
+.theme-editorial-funk h2,
+.theme-editorial-funk h3,
+.theme-editorial-funk h4,
+.theme-editorial-funk h5,
+.theme-editorial-funk h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: hsl(var(--navy));
+}
+
+.theme-editorial-funk p,
+.theme-editorial-funk span,
+.theme-editorial-funk div {
+  font-family: var(--font-sans);
+}
+
+.theme-editorial-funk .card {
+  border-width: var(--card-border-width);
+  border-style: var(--card-border-style);
+  border-color: hsl(var(--navy));
+  box-shadow: var(--card-box-shadow);
+}
+
+/* 5. Pop Art News Theme */
+.theme-pop-art {
+  --background: 0 0% 95%;
+  --foreground: 0 0% 0%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 0%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 0 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 100% 50%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 180 100% 50%;
+  --muted-foreground: 0 0% 0%;
+  --accent: 60 100% 50%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 0%;
+  --input: 0 0% 0%;
+  --ring: 0 100% 50%;
+  
+  /* Custom colors */
+  --red: 0 100% 50%;
+  --yellow: 60 100% 50%;
+  --cyan: 180 100% 50%;
+  --black: 0 0% 0%;
+  
+  /* Font families */
+  --font-comic: 'Bangers', 'Comic Sans MS', cursive;
+  --font-body: 'Poppins', sans-serif;
+  
+  /* Custom properties */
+  --card-border-glow: 0 0 20px rgba(255, 0, 0, 0.7);
+  --card-box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+  --card-border-width: 3px;
+  --card-border-style: solid;
+  
+  /* Background with halftone pattern */
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Dark mode for Pop Art */
+.dark.theme-pop-art {
+  --background: 0 0% 10%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 15%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 15%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 100% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 100% 60%;
+  --secondary-foreground: 0 0% 10%;
+  --muted: 180 100% 30%;
+  --muted-foreground: 0 0% 100%;
+  --accent: 60 100% 60%;
+  --accent-foreground: 0 0% 10%;
+  --border: 0 0% 100%;
+  --input: 0 0% 100%;
+  --ring: 0 100% 60%;
+  
+  /* Custom colors for dark mode */
+  --red: 0 100% 60%;
+  --yellow: 60 100% 60%;
+  --cyan: 180 100% 60%;
+  --black: 0 0% 100%;
+  
+  /* Custom properties for dark mode */
+  --card-border-glow: 0 0 20px rgba(255, 0, 0, 0.9);
+  --card-box-shadow: 10px 10px 0px rgba(255, 255, 255, 1);
+  
+  /* Background with halftone pattern for dark mode */
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.theme-pop-art h1,
+.theme-pop-art h2,
+.theme-pop-art h3,
+.theme-pop-art h4,
+.theme-pop-art h5,
+.theme-pop-art h6 {
+  font-family: var(--font-comic);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: hsl(var(--red));
+  text-transform: uppercase;
+}
+
+.theme-pop-art p,
+.theme-pop-art span,
+.theme-pop-art div {
+  font-family: var(--font-body);
+}
+
+.theme-pop-art .card {
+  border-width: var(--card-border-width);
+  border-style: var(--card-border-style);
+  border-color: hsl(var(--black));
+  box-shadow: var(--card-box-shadow);
+}
+
+/* Neon glow for card borders - applies to all themes */
+.card {
+  box-shadow: var(--card-border-glow), var(--card-box-shadow);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--card-border-glow), var(--card-box-shadow);
+  transform: translateY(-5px);
+}

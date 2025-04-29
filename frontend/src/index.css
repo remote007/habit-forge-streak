@@ -1,0 +1,108 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 17 38% 94%;
+    --foreground: 174 16% 33%;
+    
+    --card: 17 38% 94%;
+    --card-foreground: 174 16% 33%;
+    
+    --popover: 17 38% 94%;
+    --popover-foreground: 174 16% 33%;
+    
+    --primary: 4 29% 75%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 173 25% 82%;
+    --secondary-foreground: 174 16% 33%;
+    
+    --muted: 46 75% 81%;
+    --muted-foreground: 312 9% 45%;
+    
+    --accent: 282 40% 80%;
+    --accent-foreground: 174 16% 33%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 312 9% 45%;
+    --input: 173 25% 82%;
+    --ring: 4 29% 75%;
+
+    /* Custom color variables */
+    --soft-peach: 17 38% 94%;
+    --muted-mint: 173 25% 82%;
+    --dusty-rose: 4 29% 75%;
+    --muddy-brown: 25 50% 35%;
+    --powder-blue: 210 34% 75%;
+    --lavender-fog: 282 40% 80%;
+    --vintage-teal: 174 16% 33%;
+    --muted-plum: 312 9% 45%;
+    --jet-black: 0 0% 13%;
+  }
+
+  .dark {
+    --background: 174 16% 15%;
+    --foreground: 17 38% 94%;
+    
+    --card: 174 16% 20%;
+    --card-foreground: 17 38% 94%;
+    
+    --popover: 174 16% 20%;
+    --popover-foreground: 17 38% 94%;
+    
+    --primary: 4 29% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 173 25% 30%;
+    --secondary-foreground: 17 38% 94%;
+    
+    --muted: 46 40% 45%;
+    --muted-foreground: 17 38% 84%;
+    
+    --accent: 282 30% 40%;
+    --accent-foreground: 17 38% 94%;
+    
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 312 9% 35%;
+    --input: 173 25% 30%;
+    --ring: 4 29% 65%;
+
+    /* Custom color variables */
+    --soft-peach: 17 30% 40%;
+    --muted-mint: 173 25% 30%;
+    --dusty-rose: 4 29% 55%;
+    --muddy-brown: 46 40% 40%;
+    --powder-blue: 210 34% 40%;
+    --lavender-fog: 282 30% 40%;
+    --vintage-teal: 174 16% 60%;
+    --muted-plum: 312 9% 65%;
+    --jet-black: 0 0% 13%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .heatmap-cell {
+    @apply w-7 h-7 rounded-md m-0.5 transition-colors duration-200 cursor-pointer;
+  }
+  
+  .badge-icon {
+    @apply text-xl transition-all;
+  }
+}
